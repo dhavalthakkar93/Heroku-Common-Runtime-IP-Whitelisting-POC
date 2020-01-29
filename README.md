@@ -24,10 +24,10 @@ If you are using `Deploy to Heroku` button you can skip the Heroku prerequisite 
         |  USER  |                |    NGINX    |               |     EXPRESS     |
         |        |   <-------+    |             |   <-------+   |                 |
         +--------+                +-------------+               +-----------------+
-                                                                  localhost:3000
+                                                                  localhost:2500
 ```
 
-Node.js express server will run on Heroku dyno on port `3000`, nginx will use Heroku `PORT` environment variable, Request will hit the nginx first and if source IPs is within range of trusted IPs it will pass the request to express server otherwise nginx will serve 403 error page.
+Node.js express server will run on Heroku dyno on port `2500` (Common Runtime look for a free port between `3000-60000` for `PORT` environment variable so It's good to use static port outside of this range), nginx will use Heroku `PORT` environment variable, Request will hit the nginx first and if source IPs is within range of trusted IPs it will pass the request to express server otherwise nginx will serve 403 error page.
 
 **Note:** This POC tested with Node.js and express server only but the same POC can be used with other languages and frameworks as well.
 

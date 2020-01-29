@@ -15,7 +15,7 @@ app.post('/ping', function(req, res) {
     res.send(req.body);    
 })
 
-app.set('port', 3000);
+app.set('port', 2500);
 
 var server = app.listen(app.get('port'), function () {
     if (process.env.DYNO) {
