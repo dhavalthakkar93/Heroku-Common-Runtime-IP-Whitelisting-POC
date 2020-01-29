@@ -1,0 +1,12 @@
+{
+    "name": "heroku-cr-ip-whitelist-poc",
+    "repository": "https://github.com/dhavalthakkar93/Heroku-Common-Runtime-IP-Whitelisting-POC.git",
+    "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nginx.git"
+        }, 
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+    ]
+}
