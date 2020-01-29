@@ -21,6 +21,6 @@ var server = app.listen(app.get('port'), function () {
     if (process.env.DYNO) {
         console.log('Running on Heroku...');
         fs.openSync('/tmp/app-initialized', 'w');
-      }
+    }
     console.log('Node app is running on port:', app.get('port'));
 });
