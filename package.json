@@ -1,0 +1,17 @@
+{
+  "name": "heroku-common-runtime-ip-whitelisting",
+  "version": "1.0.0",
+  "description": "IP whitelisting for Heroku Common Runtime",
+  "license": "UNLICENCED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhavalthakkar93/Heroku-Common-Runtime-IP-Whitelisting-POC.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",        
+    "express": "^4.14.0"    
+  }
+}
